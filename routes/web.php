@@ -16,3 +16,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/Napoli', function () {
+    return view('Napoli',['city' => 'Napoli']);
+});
+
+Route::get('/Milano', function () {
+    return view('Milano',['city' => 'Milano']);
+});
+
+Route::get('/Torino', function () {
+    return view('Torino',['city' => 'Torino']);
+});
+
+Route::get('/SanMartino', function () {
+    return view('SanMartino',['city' => 'San Martino']);
+});
